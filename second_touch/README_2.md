@@ -1,4 +1,3 @@
-## What is Object (Object là gì) ?
 Bassically, object work like a variance. In C++, we know that `struct` allows us to create a new data type, which can then be used to create and work with a variable. So that, back to java, we have `Class` is the same with `Struct` and `object` same with `variable`.
 >Về cơ bản, đối tượng (object) hoạt động giống như một biến số. Trong C++, ta biết rằng `struct` cho phép tạo ra một kiểu dữ liệu mới, và kiểu dữ liệu này sau đó được dùng để tạo và thao tác với biến. Tương tự như vậy, khi xét đến Java, ta có thể coi `Class` tương đương với `Struct`, còn `object` thì tương đương với biến.
 

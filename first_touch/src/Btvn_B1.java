@@ -49,30 +49,43 @@ class student_manager {
 }
 
 public class Btvn_B1{
-    public static void main(String[] args)
-    {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Số lượng học sinh: ");
-        int numb = sc.nextInt();
-        student[] ds_hocsinh = new student[numb+10];
-        for(int i=1;i<=numb;i++)
-        {
-            System.out.printf("Học sinh thứ %d\n",i);
-            System.out.println("________________________________________________________________");
-            ds_hocsinh[i] = new student();
-            student_manager Q = new student_manager();
-            Q.query(ds_hocsinh[i]);
-            System.out.println("________________________________________________________________");
-        }
-        System.out.print("Số lượng truy vấn: ");
-        int q = sc.nextInt();
-        for(int i=1;i<=q;i++)
-        {
-            System.out.print("Cho gọi học sinh có STT: ");
-            int temp = sc.nextInt();
-            if(temp>numb) ds_hocsinh[temp] = new student();
-            student_manager Q = new student_manager();
-            Q.query(ds_hocsinh[temp]);
-        }
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Số lượng học sinh: ");
+//        int numb = sc.nextInt();
+//        student[] ds_hocsinh = new student[numb+10];
+//        for(int i=1;i<=numb;i++)
+//        {
+//            System.out.printf("Học sinh thứ %d\n",i);
+//            System.out.println("________________________________________________________________");
+//            ds_hocsinh[i] = new student();
+//            student_manager Q = new student_manager();
+//            Q.query(ds_hocsinh[i]);
+//            System.out.println("________________________________________________________________");
+//        }
+//        System.out.print("Số lượng truy vấn: ");
+//        int q = sc.nextInt();
+//        for(int i=1;i<=q;i++)
+//        {
+//            System.out.print("Cho gọi học sinh có STT: ");
+//            int temp = sc.nextInt();
+//            if(temp>numb) ds_hocsinh[temp] = new student();
+//            student_manager Q = new student_manager();
+//            Q.query(ds_hocsinh[temp]);
+//        }
+//    }
+    public static void main(String[] args) {
+        Student student = new Student();
+        student.name = "A";
+        System.out.println(student.name); // A
+        change(student);
+        System.out.println(student.name); // B
     }
+
+    public static void change(Student student) {
+        student.name = "B";
+    }
+}
+class Student {
+    String name;
 }
